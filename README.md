@@ -346,10 +346,10 @@ class MineralsApp(tk.Tk):
         frm = self.map_frame
         for w in frm.winfo_children():
             w.destroy()
-        ttk.Label(frm, text="🗺️ Interactive Map", font=("Segoe UI", 12, "bold")).pack(pady=10)
+        ttk.Label(frm, text="Interactive Map", font=("Segoe UI", 12, "bold")).pack(pady=10)
         ttk.Label(frm, text="This will open your map HTML in your default browser.").pack(pady=5)
         ttk.Button(frm, text="Open Map in Browser", command=self.render_map).pack(pady=8)
-        ttk.Button(frm, text="🔙 Back to Dashboard", command=lambda: self.notebook.select(self.dashboard_frame)).pack(pady=6)
+        ttk.Button(frm, text="Back to Dashboard", command=lambda: self.notebook.select(self.dashboard_frame)).pack(pady=6)
 
     def render_map(self):
         """
